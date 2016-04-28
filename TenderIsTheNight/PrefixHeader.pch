@@ -1,0 +1,57 @@
+
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import "UIView+Extension.h"
+#import "UIImage+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+
+
+
+#ifdef DEBUG
+#define CYGLog(...) NSLog(__VA_ARGS__)
+#else
+#define CYGLog(...)
+#endif
+
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+// 颜色
+#define CYGColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define CYGColorRGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
+// 随机色
+#define CYGRandomColor CYGColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+#define HomeTitleFont [UIFont boldSystemFontOfSize:17]
+#define HomeLikesFont [UIFont systemFontOfSize:13]
+#define LuxuryTextFont [UIFont systemFontOfSize:15]
+#define HomeSeleTitleFont HomeTitleFont
+#define HomeSeleTextFont LuxuryTextFont
+#define HomeSeleLikesCommentFont HomeLikesFont
+
+#define MapAPIKEY  @"b3b3c8fb2afc25952b97f0acead30089"
+#define UMAppKey @"565812a767e58e7b1b003586"
+#define WXAppID @"wx12c7c9a0543697fd"
+#define WXAppSecret @"f31ef25d7a25bc1899295a7df38fc6a5"
+#define QQAppId @"1104938495"
+#define QQAppKey @"gavl7xcc7lzkrSvH"
+
+
+//首页base接口 page=%d
+#define HomeBasePage @"http://open3.bantangapp.com/recommend/index?app_installtime=1448932071.629193&app_versions=5.0&channel_name=appStore&client_id=bt_app_ios&client_secret=9c1e6634ce1c5098e056628cd66a17a5&device_token=304307ca7954620f2b4627e28e223ff09b67bdc4c8af15f56eb74a61f4147b89&oauth_token=2cb8686c95732f9f2d63e08b65ef9d69&os_versions=9.0.2&pagesize=20&screensize=640&track_device_info=iPhone5%2C3&track_deviceid=2944531C-183D-4C88-8560-07D30644D8CD&track_user_id=1634215&v=8"
+#define HomeSelectedBasePage @"http://open3.bantangapp.com/topic/newInfo?app_installtime=1448932071.629193&app_versions=5.0&channel_name=appStore&client_id=bt_app_ios&client_secret=9c1e6634ce1c5098e056628cd66a17a5&device_token=304307ca7954620f2b4627e28e223ff09b67bdc4c8af15f56eb74a61f4147b89&oauth_token=0e361542fcce19eba01265a0b43cc74f&os_versions=9.0.2&screensize=640&statistics_uv=1&track_device_info=iPhone5%2C3&track_deviceid=2944531C-183D-4C88-8560-07D30644D8CD&track_user_id=1634215&v=8"
+
+
+
+#define LuxuryBasePage @"http://open3.bantangapp.com/community/post/editorRec?app_installtime=1448932071.629193&app_versions=5.0&channel_name=appStore&client_id=bt_app_ios&client_secret=9c1e6634ce1c5098e056628cd66a17a5&device_token=304307ca7954620f2b4627e28e223ff09b67bdc4c8af15f56eb74a61f4147b89&oauth_token=4c99f1337e6214bb70e956758fdff7e6&os_versions=9.0.2&pagesize=10&screensize=640&track_device_info=iPhone5%2C3&track_deviceid=2944531C-183D-4C88-8560-07D30644D8CD&track_user_id=1634215&v=8"
+
+#define LikePage @"http://open3.bantangapp.com/users/notice/redSpot?app_installtime=1448932071.629193&app_versions=5.0&channel_name=appStore&client_id=bt_app_ios&client_secret=9c1e6634ce1c5098e056628cd66a17a5&device_token=304307ca7954620f2b4627e28e223ff09b67bdc4c8af15f56eb74a61f4147b89&oauth_token=e1444be16f68d3114675cd26ce12b0a7&os_versions=9.0.2&track_device_info=iPhone5%2C3&track_deviceid=2944531C-183D-4C88-8560-07D30644D8CD&track_user_id=1634215&type=1&v=8"
+
+#define ProductPicBasePage @"http://bt.img.17gwx.com/"
+#define ProductLikeIconBasePage @"http://7te7t9.com2.z0.glb.qiniucdn.com/"
+
+#endif /* PrefixHeader_pch */
