@@ -254,6 +254,7 @@
 }
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+//TODO: this is a temporary fix to something.
     //self.tableView.tableHeaderView.height-244 先减180是上面图片的高度，图片刚刚消失使aipha是0；再减64是topview得高度，这样当section顶部刚好移到topview底部时alpha为1
     float titleViewAlpha = (self.tableView.contentOffset.y - 180)/(self.tableView.tableHeaderView.height-244);
     self.topview.alpha = titleViewAlpha;
