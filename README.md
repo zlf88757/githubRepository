@@ -1,3 +1,4 @@
 # githubRepository
-MytestFirstOne
-一些代码
+First Github Repository
+自己写的小Demo 
+
